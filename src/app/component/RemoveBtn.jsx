@@ -10,7 +10,7 @@ export default function RemoveBtn({id}){
         const confirmed=confirm("Are you sure want to delete?");
 
         if(confirmed){
-            const res=await fetch(`http://localhost:3000/api/topics?id=${id}`,{
+            const res=await fetch(`https://next-todo-app-pi/api/topics?id=${id}`,{
                 method:"DELETE",
             });
             if(res.ok){
