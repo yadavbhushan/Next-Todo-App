@@ -2,10 +2,10 @@ import Link from "next/link";
 import RemoveBtn from "./RemoveBtn";
 import { HiPencilAlt } from "react-icons/hi";
 
-
+// https://next-todo-app-pi.vercel.app/
 const getTopic = async () => {
   try {
-    const res = await fetch("http://localhost:3000/api/topics",
+    const res = await fetch("https://next-todo-app-pi.vercel.app/api/topics",
       { cache: "no-store", });
 
     if (!res.ok) {
