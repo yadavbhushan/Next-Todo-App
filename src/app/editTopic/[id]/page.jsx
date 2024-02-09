@@ -2,7 +2,7 @@ import EditTopicForm from "@/app/component/EditTopicForm";
 
  const getTopicByid=async (id)=>{
     try {
-        const res=await fetch(`https://next-todo-app-pi/api/topics/${id}`,{
+        const res=await fetch(`https://next-todo-app-pi.vercel.app/api/topics/${id}`,{
             cache:"no-store",
         });
 

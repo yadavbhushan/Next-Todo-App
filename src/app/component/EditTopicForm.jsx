@@ -12,7 +12,7 @@ import { useState } from "react";
    const handleSubmit=async(e)=>{
       e.preventDefault();
       try {
-        const res=await fetch(`https://next-todo-app-pi/api/topics/${id}`,{
+        const res=await fetch(`https://next-todo-app-pi.vercel.app/api/topics/${id}`,{
             method:"PUT",
             headers:{
                 "content-type":"application/json",
